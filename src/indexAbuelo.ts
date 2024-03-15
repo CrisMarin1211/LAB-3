@@ -14,7 +14,7 @@ class AppContainer extends HTMLElement {
 		super();
 		this.attachShadow({ mode: `open` });
 
-		workers.forEach((user) => {
+		workers.filter(filterParUid).forEach((user) => {
 			const myComponentsCard = this.ownerDocument.createElement(`My-Component`) as Mycomponent;
 			myComponentsCard.setAttribute(Attribute.name, user.name);
 			myComponentsCard.setAttribute(Attribute.uid, String(user.id));
