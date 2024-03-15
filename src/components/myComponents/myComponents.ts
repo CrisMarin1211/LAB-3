@@ -6,7 +6,7 @@ export enum Attribute {
 	'gender' = `gender`,
 	'area' = `area`,
 	'position' = `position`,
-	'timeInCompany' = `timeInCompany`,
+	'timeinCompany' = `timeinCompany`,
 	'experience' = `experience`,
 }
 
@@ -18,7 +18,7 @@ class Mycomponent extends HTMLElement {
 	gender?: string;
 	area?: string;
 	position?: string;
-	timeInCompany?: number;
+	timeinCompany?: number;
 	experience?: number;
 
 	constructor() {
@@ -35,7 +35,7 @@ class Mycomponent extends HTMLElement {
 			gender: null,
 			area: null,
 			position: null,
-			timeInCompany: null,
+			timeinCompany: null,
 			experience: null,
 		};
 		return Object.keys(attrs);
@@ -51,8 +51,8 @@ class Mycomponent extends HTMLElement {
 				this.age = newValue ? Number(newValue) : undefined;
 				break;
 
-			case Attribute.timeInCompany:
-				this.timeInCompany = newValue ? Number(newValue) : undefined;
+			case Attribute.timeinCompany:
+				this.timeinCompany = newValue ? Number(newValue) : undefined;
 				break;
 
 			case Attribute.experience:
@@ -79,7 +79,7 @@ class Mycomponent extends HTMLElement {
    <img src="${this.image}" alt="">
 	 <p>${this.gender}</p>
    <p>${this.area}</p>
-   <p>${this.timeInCompany}</p>
+   <p>${this.timeinCompany}</p>
    <p>${this.experience}</p>
    </section>
    `;

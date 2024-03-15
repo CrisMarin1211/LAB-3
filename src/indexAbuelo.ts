@@ -23,7 +23,7 @@ class AppContainer extends HTMLElement {
 			myComponentsCard.setAttribute(Attribute.gender, user.gender);
 			myComponentsCard.setAttribute(Attribute.area, user.jobDetails.area);
 			myComponentsCard.setAttribute(Attribute.position, user.jobDetails.position);
-			myComponentsCard.setAttribute(Attribute.timeInCompany, String(user.jobDetails.timeInCompany));
+			myComponentsCard.setAttribute(Attribute.timeinCompany, String(user.jobDetails.timeInCompany));
 			myComponentsCard.setAttribute(Attribute.experience, String(user.jobDetails.experience));
 
 			this.myComponents.push(myComponentsCard);
