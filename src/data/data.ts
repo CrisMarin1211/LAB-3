@@ -1,6 +1,6 @@
 import { string } from '../../../../node_modules/mathjs/types/index';
 
-interface DataShape {
+export interface DataShape {
 	id: number;
 	image: string;
 	name: string;

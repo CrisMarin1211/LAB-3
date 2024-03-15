@@ -1,6 +1,12 @@
 import * as MyComponents from './components/indexPadre';
 import Mycomponent, { Attribute } from './components/myComponents/myComponents';
-import { workers } from './data/data';
+import { DataShape, workers } from './data/data';
+
+const filterParUid = (user: DataShape) => {
+	console.log(user.id);
+	return user.id % 2 == 0;
+};
+
 class AppContainer extends HTMLElement {
 	myComponents: Mycomponent[] = [];
 

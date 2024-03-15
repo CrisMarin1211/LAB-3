@@ -77,6 +77,10 @@ class Mycomponent extends HTMLElement {
    <h1>${this.name}</h1>
    <p>${this.uid}</p>
    <img src="${this.image}" alt="">
+	 <p>${this.gender}</p>
+   <p>${this.area}</p>
+   <p>${this.timeInCompany}</p>
+   <p>${this.experience}</p>
    </section>
    `;
 		}
